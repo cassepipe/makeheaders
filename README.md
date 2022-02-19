@@ -1,5 +1,7 @@
 # makeheaders
+
 This is a fork of https://fossil-scm.org/home/file?name=src/makeheaders.c hacked for the purpose of adding an optional output directory for the generated headers.
+Pull requests from more talented programmers than I am (a low bar) will be ~~blindly~~ gladly merged.
 
 To give it an optional output directory, try `-o=./my_local_dir` or `-o=/some/path/to/a/dir`
 
