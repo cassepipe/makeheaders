@@ -21,7 +21,7 @@ endif
 This will trigger the generation of header files each time you update a buffer. If no re-generation is needed `makeheaders` will not touch the generated files
 and `make` won't rebuild for nothing.
 This only work if you have zsh installed and in your `PATH`. The reason for using `zsh` is because of the handy `*(N)` glob syntax. There's probably a `bash`
-euqivalent but I can't be arsed.
+equivalent but I can't be arsed.
 
 This will only work if you are using vim from your project root directory. 
 A good way to avoid typing `vi /[src|interface]/some_file.[ch]` each time is to use either from `zsh` to use `vi -t` and then pressing `<TAB>` will autocomplete tags from your ctags file or to just use `vi src` or `vi interface` will let you navigate to the file you want using `j` and `k` and `Enter`.
