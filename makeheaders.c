@@ -915,16 +915,11 @@ static const char *ft_basename(const char *path)
 
 static int WriteFile(const char *zFilename, const char *zOutput, const char *opt_output_dir)
 {
-	FILE *pOut;
-	char *path;
+	FILE *pOut = NULL;
+	char *path = NULL;
 	if (opt_output_dir != NULL)
 	{
 		path = ft_strjoin3(opt_output_dir, "/", ft_basename(zFilename));
-		if (path == 0)
-		{
-			fprintf(stderr, "Could not append filename=%s to ouptut path=%s in WriteFile\n", zFilename, opt_output_dir);
-			exit(1);
-		}
 		pOut = fopen(path, "w");
 	}
 	else
@@ -934,7 +929,8 @@ static int WriteFile(const char *zFilename, const char *zOutput, const char *opt
 	if (pOut == 0)
 	{
 
-		fprintf(stderr, "Could not open %s\n", path);
+		fprintf(stderr, "Could not open %s\n", path ? path : zFilename);
+        free(path);
 		perror("fopen");
 		return 1;
 	}
