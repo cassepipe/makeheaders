@@ -28,4 +28,4 @@ equivalent but I can't be arsed.
 This will only work if you are using vim from your project root directory. 
 A good way to avoid typing `vi /[src|interface]/some_file.[ch]` each time is to use either from `zsh` to use `vi -t` and then pressing `<TAB>` will autocomplete tags from your ctags file or to just use `vi src` or `vi interface` will let you navigate to the file you want using `j` and `k` and `Enter`.
 
-Here is the original documentation of `makeheaders` : [https://fossil-scm.org/home/doc/trunk/src/makeheaders.html#H0006](https://fossil-scm.org/home/doc/trunk/tools/makeheaders.html)https://fossil-scm.org/home/doc/trunk/tools/makeheaders.html
+Here is the original documentation of `makeheaders` : https://fossil-scm.org/home/doc/trunk/tools/makeheaders.html
