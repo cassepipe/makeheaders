@@ -12,7 +12,7 @@ In `src` put all your .c files.
 In `interface` put all your typedefs/structs declarations in `.h` files, do not add header guards and do not `#include` them in your `.c` files.
 `makeheaders` will copy their content into automatically generated headers.
 
-In each of your `[filename].c` files add an `#include "[filename].h`
+In each of your `[filename].c` files add an `#include "[filename].h"`
 
 Finally in your `~/.vimrc` add the following :
 ```vimscript
